@@ -6,6 +6,8 @@ from internals.src._internals.preprocess_lines import preprocess_lines
 from internals.src._internals.split_into_words import split_into_words
 from internals.src.read_all_lines import read_all_lines
 
+from homework.src.write_word_counts import write_word_counts
+
 from .internals.write_count_words import write_count_words
 
 
@@ -36,7 +38,7 @@ def main():
     #                 counter[w] = counter.get(w, 0) + 1
 
     ##
-    write_count_words(counter)
+    write_word_counts(counter)
 
 def read_all_lines():
     all_lines = read_all_lines()
