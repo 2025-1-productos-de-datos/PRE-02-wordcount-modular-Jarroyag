@@ -15,8 +15,8 @@ def main():
         print("Usage: python3 -m homework <input_folder> <output_folder>")
         sys.exit(1)
 
-    input_folder = "sys.argv[1]"
-    output_folder = "sys.argv[2]"
+    input_folder = sys.argv[1]
+    output_folder = sys.argv[2]
 
     
     all_lines = read_all_lines(input_folder)
