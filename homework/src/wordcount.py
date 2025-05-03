@@ -3,9 +3,9 @@ import sys
 
 from ._internals.src._internals.count_words import count_words
 from ._internals.src._internals.preprocess_lines import preprocess_lines
+from ._internals.src._internals.read_all_lines import read_all_lines
 from ._internals.src._internals.split_into_words import split_into_words
-from ._internals.src.read_all_lines import read_all_lines
-from ._internals.src.write_word_counts import write_count_words
+from ._internals.src._internals.write_word_counts import write_count_words
 
 
 def main():
