@@ -9,17 +9,12 @@ from .internals.write_count_words import write_count_words
 
 def main():
 
-    ## mover a la funcion "read_all_lines"
-    all_lines = read_all_lines()
-
-    ## mover a "preprocess_lines"
+    
+    all_lines = read_all_lines(input_folder)
     all_lines = preprocess_lines(all_lines)
-
-    ## mover "split_in_words"
     words = split_in_words(all_lines)
-
-    ## mover a "count_words"
-    counter = count_words(words)
+    counter = count_words(words,output_folder)
+    write_count_words(counter, output_folder)
 
     # count the frequency of the words in the files in the input directory
     # counter = {}
