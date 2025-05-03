@@ -35,7 +35,7 @@ def main():
     #                 counter[w] = counter.get(w, 0) + 1
 
     ##
-    write_word_counts(counter)
+    write_count_words(counter)
 
 def read_all_lines():
     all_lines = read_all_lines()
